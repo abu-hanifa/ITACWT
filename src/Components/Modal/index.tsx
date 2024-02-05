@@ -13,6 +13,7 @@ const EditModal = ({close, content, item}: EditModal) => {
     const [value, setValue] = useState('');
     const changeName = () => {
         content.map((c: any) => {
+            
             if(c.id === item.id){
                 item[title] = value;
             }
